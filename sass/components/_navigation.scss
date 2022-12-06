@@ -1,0 +1,86 @@
+// Навігація по сайту */
+
+.navigation {
+  display: flex;
+  align-items: center;
+
+  //* лого */
+  .logo {
+    @extend .logo;
+  }
+
+  //* лого в шапці */
+  .logo--black {
+    color: #000000;
+  }
+
+  /* Головна сторінка */
+
+  /* Студія, Потфоліо, Контакти */
+  &__choiсe {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  &__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: getColor('title-text-color');
+    position: relative;
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__link--current:after {
+    /* transform: translateY(32px); */
+    position: absolute;
+    bottom: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: getColor('accent-color');
+  }
+
+  /* при наведенні */
+  &__link:hover,
+  &__link:focus,
+  &__mail:hover,
+  &__mail:focus,
+  &__tel:hover,
+  &__tel:focus {
+    color: getColor('accent-color');
+    fill: getColor('accent-color');
+  }
+
+  &__contacts {
+    display: flex;
+    margin-left: auto;
+  }
+
+  &__mail,
+  &__tel {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: getColor('paragraph-color');
+    align-items: center;
+    justify-content: center;
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__mail--icon,
+  &__tel--icon {
+    fill: currentColor;
+    margin-right: 10px;
+    background-size: auto;
+  }
+}

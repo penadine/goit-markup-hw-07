@@ -1,0 +1,166 @@
+/* Підвал сторінки */
+
+.footer {
+    background-color: getColor('hero-footer');
+    padding-top: 60px;
+    padding-bottom: 60px;
+ 
+  
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
+  
+  /* 1. Блок з адресою */
+  
+  /* лого в підвалі */
+  .logo {
+    @extend .logo;
+  }
+
+  .logo--white {
+    color: #ffffff;
+  }
+  
+  /* Контактна інформація */
+  &__contact {
+    line-height: 1.71;
+  }
+  
+  &__address {
+    color: #ffffff;
+    margin-top: 20px;
+    display: block;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  &__mail,
+  &__tel {
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 9px;
+    display: block;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  &__address:hover,
+  &__address:focus,
+  &__mail:hover,
+  &__mail:focus,
+  &__tel:hover,
+  &__tel:focus {
+    color: getColor('accent-color');
+  }
+  
+  /* 2. Блок з соціальними контактами. Приєднуйтесь */
+  
+  &__social-networks {
+    padding-top: 12px;
+    margin-left: 70px;
+  }
+  
+  .join {
+    line-height: 1.17;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  &__social {
+    display: flex;
+  }
+}
+  
+  .social__item--footer {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .social__link--footer {
+    fill: #ffffff;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .social__link--footer:hover,
+  .social__link--footer:focus {
+    background-color: getColor('accent-color');
+  }
+  
+  /* 3. Блок підписатися на розсилку */
+  
+  .subscribe__form {
+    /* padding-top: 12px; */
+    margin-left: 93px;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .subscribe__email {
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+  }
+  
+  .subscribe__email--input {
+    display: block;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: #2f303a;
+    align-items: center;
+    outline-color: #2f303a;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    padding-left: 16px;
+    transition-property: border-color, outline-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .subscribe__email--input:focus,
+  .subscribe__email--input:hover,
+  .subscribe__email--input:focus-visible {
+    border-color: getColor('accent-color');
+    outline-color: getColor('accent-color');
+  }
+  
+  .subscribe__email--input::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .subscribe__button {
+    @extend %button;
+    width: 200px;
+  }
+  
+  .subscribe__button:hover,
+  .subscribe__button:focus {
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+  
+  .subscribe__action {
+    margin-right: 10px;
+  }
+  
+  .send--icon {
+    fill: #ffffff;
+    vertical-align: middle;
+  }

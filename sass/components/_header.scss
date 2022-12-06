@@ -1,0 +1,13 @@
+// Шапка сторінки
+
+.header {
+    border-bottom: 1px solid #ececec;
+  
+  
+  &__container {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    display: flex;
+  }
+}
