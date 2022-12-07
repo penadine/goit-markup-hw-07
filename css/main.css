@@ -44,6 +44,11 @@ button {
   border: none;
 }
 
+text {
+  opacity: 0;
+  color: rgba(0, 0, 0, 0);
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -346,6 +351,7 @@ button {
   letter-spacing: 0.01em;
   width: 448px;
 }
+
 .form__field {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -356,12 +362,15 @@ button {
           flex-direction: column;
   position: relative;
 }
+
 .form__field:not(:last-child) {
   margin-bottom: 10px;
 }
+
 .form__label {
   margin-bottom: 4px;
 }
+
 .form__input {
   display: block;
   width: 100%;
@@ -379,7 +388,10 @@ button {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form__input:hover, .form__input:focus, .form__input:focus-visible {
+
+.form__input:hover,
+.form__input:focus,
+.form__input:focus-visible {
   border-color: #2196f3;
   outline-color: #2196f3;
 }
@@ -529,19 +541,8 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  /* .checkbox-confirm::before {
-    width: 16px;
-    height: 15px;
-    content: "";
-    position: absolute;
-    background-image: url(../images/icon-tocheck.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    overflow: hidden;
-    vertical-align: middle;
-    visibility: visible;
-  }  */
 }
+
 .confirm__checkbox {
   width: 16px;
   height: 15px;
@@ -559,6 +560,19 @@ button {
   /* position: relative; */
   /* visibility: hidden; */
 }
+
+/* .checkbox-confirm::before {
+    width: 16px;
+    height: 15px;
+    content: "";
+    position: absolute;
+    background-image: url(../images/icon-tocheck.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    vertical-align: middle;
+    visibility: visible;
+  }  */
 .confirm__checkbox:checked::before {
   width: 16px;
   height: 15px;
@@ -570,6 +584,7 @@ button {
   border: none;
   background-color: transparent;
 }
+
 .confirm__contract {
   margin-left: 8.38px;
 }
