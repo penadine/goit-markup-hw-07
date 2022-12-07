@@ -1,26 +1,26 @@
 /* Чим ми займаємося */
 
 .doing {
-    padding-bottom: 94px;
-  
+  padding-bottom: 94px;
+
   &__title {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     margin-bottom: 50px;
   }
-  
+
   &__items {
     display: flex;
     margin-left: -30px;
     position: relative;
   }
-  
+
   &__item {
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
   }
-  
+
   &__variation {
     display: flex;
     position: absolute;
@@ -33,7 +33,7 @@
     justify-content: center;
     bottom: 0;
   }
-  
+
   &__name {
     color: #ffffff;
     line-height: 1.17;
